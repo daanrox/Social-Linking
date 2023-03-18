@@ -170,25 +170,32 @@ button::before{
 #extension-images img:not(:first-child) {
   display: none;
 }
-#extension-images img.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
+
+
+
+
+
+.li-micro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#extension-images img.arrow.left {
-  left: 0;
-  background-image: url('./assets/left.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+
+#micro-images img {
+  padding-top: 15px;
+  max-width: 100%;
+  border-radius: 15px;
+  align-items: center;
+  transition: 2s;
 }
-#extension-images img.arrow.right {
-  right: 0;
-  background-image: url('./assets/right.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+
+#micro-images img:hover {
+  transform: scale(1.05);
+ 
 }
 
 
+#micro-images img:not(:first-child) {
+  display: none;
+}
