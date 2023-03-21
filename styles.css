@@ -155,7 +155,25 @@ button::before{
   justify-content: center;
 }
 
-#extension-images img {
+.li-extension div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowleft{
+  padding-bottom: 30%;
+  padding-right: 0px;
+  opacity: 60%;
+}
+
+.arrowright{
+  padding-bottom: 30%;
+  padding-left: 0px;
+  opacity: 60%;
+}
+
+#extension-images img{
   padding-top: 15px;
   max-width: 100%;
   border-radius: 15px;
@@ -164,40 +182,54 @@ button::before{
 }
 
 #extension-images img:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
  
 }
 
-
-#extension-images img:not(:first-child) {
-  display: none;
-}
-
-
-
-
-
-.li-micro{
+ .li-micro{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} 
 
 #micro-images img {
   padding-top: 15px;
   max-width: 100%;
   border-radius: 15px;
   align-items: center;
-  transition: 2s;
+  /* transition: 2s; */
 }
-
 #micro-images img:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
  
 }
 
 
-#micro-images img:not(:first-child) {
-  display: none;
+#carousel-container {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 300px;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+#carousel-container img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+#carousel-container2 {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 300px;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+#carousel-container2 img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
