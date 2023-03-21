@@ -28,23 +28,46 @@ const database2 = [
 
 
 function toggleExtensionImages() {
-    var extensionImages = document.getElementById("extension-images");
-    if (extensionImages.style.display === "none") {
-      extensionImages.style.display = "block";
-    } else {
-      extensionImages.style.display = "none";
-    }
+  var extensionImages = document.getElementById("extension-images");
+  var microImages = document.getElementById("micro-images");
+  microImages.style.display = "none"; // oculta as micro imagens
+  if (extensionImages.style.display === "none") {
+    extensionImages.style.display = "block";
+  } else {
+    extensionImages.style.display = "none";
   }
+}
 
 
-  function toggleMicroImages() {
-    var microImages = document.getElementById("micro-images");
-    if (microImages.style.display === "none") {
-      microImages.style.display = "block";
-    } else {
-      microImages.style.display = "none";
-    }
+function toggleMicroImages() {
+  var microImages = document.getElementById("micro-images");
+  var extensionImages = document.getElementById("extension-images");
+  extensionImages.style.display = "none"; // oculta as imagens de extensão
+  if (microImages.style.display === "none") {
+    microImages.style.display = "block";
+  } else {
+    microImages.style.display = "none";
   }
+}
+
+// function toggleExtensionImages() {
+//     var extensionImages = document.getElementById("extension-images");
+//     if (extensionImages.style.display === "none") {
+//       extensionImages.style.display = "block";
+//     } else {
+//       extensionImages.style.display = "none";
+//     }
+//   }
+
+
+//   function toggleMicroImages() {
+//     var microImages = document.getElementById("micro-images");
+//     if (microImages.style.display === "none") {
+//       microImages.style.display = "block";
+//     } else {
+//       microImages.style.display = "none";
+//     }
+//   }
 
   const container = document.getElementById("carousel-container");
 
