@@ -1,6 +1,7 @@
 # Roberta Lopes Links
 Site no estilo social-linking
 
+![sociallinking.jpg](sociallinking.jpg)
 
 ## Descrição 
 Este repositório contém o código fonte de um site para Roberta Lopes, especializada em Lash Design e extensão de cílios. 
